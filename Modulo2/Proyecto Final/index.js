@@ -278,6 +278,11 @@ function register(){
         let userName = document.querySelector(".userName")
         let userMail = document.querySelector(".userMail")
 
+        if(userMail.value == "" || userName.value == ""){
+            alert("you need to fill every box!")
+            return;
+        }
+
     
         for(let i = 0; i<registeredMailList.length; i++){
             if(registeredMailList[i] == userMail.value){
