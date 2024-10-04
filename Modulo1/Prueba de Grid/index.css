@@ -1,0 +1,33 @@
+
+.gridivs {
+    height: auto;
+    width: auto;
+    border: 2px solid black;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+
+
+/* 
+Pocsicion de cajas:
+Primer parametro : inicio de la fila 
+Segundo parametro: inicio de la columna
+Tercer parametro: final de la fila
+Cuatro parametro: final de la columna
+*/
+
+.caja1 {
+    grid-area: 1 / 2 / -1 / 3 ;
+    height: auto;
+    background-color: orange;
+}
+
+.caja2 {
+    grid-area: 2 / 1 / 2 / -1 ;
+    height: auto;
+    background-color: orange;
+}
